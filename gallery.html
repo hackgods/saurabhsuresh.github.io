@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Gallery</title>
+<style>
+#title {
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 50px;
+		color: #ffffff;
+		font-size: 50px;
+		font-family: 'product-sans'; 
+		
+		}
+		@font-face {
+		
+		font-family: 'product-sans'; 
+			 src: url('Product Sans Regular.ttf');
+		}
+		
+body {
+		background: #C2185B;
+    background-image: linear-gradient(to right, #3AB2FF, #C2185B);
+		}			
+
+
+
+
+div.gallery {
+  border: 0px solid #ccc;
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+    border-radius: 10px;
+display: inline-block;
+		box-shadow: 0 39px 38px rgba(0,0,0,0.10), 0 20px 12px rgba(0,0,0,0.10); 
+		transition: all 0.5s ease
+
+}
+
+div.gallery img:hover  {
+      		box-shadow: 0 39px 38px rgba(0,0,0,0.50), 0 20px 12px rgba(0,0,0,0.10); 
+    }
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  		font-family: 'product-sans'; 
+  		font-size: 20px;
+  		color: #fff;		
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.formbox {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .formbox {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .formbox {
+    width: 100%;
+  }
+}			
+</style>
+</head>
+<body>
+<h1 id="title" align="center">Gallery</h1> <br>
+
+<div class="formbox">
+  <div class="gallery">
+      <img src="images/img1.jpg" width="600" height="400">
+    <div class="desc">Starry Night</div>
+  </div>
+</div>
+
+
+<div class="formbox">
+  <div class="gallery">
+      <img src="images/img2.jpg" width="600" height="400">
+    <div class="desc">Tree of Life</div>
+  </div>
+</div>
+
+<div class="formbox">
+  <div class="gallery">
+      <img src="images/img3.jpg" width="600" height="400">
+    <div class="desc">Hot Balloon</div>
+  </div>
+</div>
+
+<div class="formbox">
+  <div class="gallery">
+      <img src="images/img4.jpg" width="600" height="400">
+    <div class="desc">Sunset</div>
+  </div>
+</div>
+
+
+</body>
+</html>

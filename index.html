@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>UCD</title>
+<script>
+function contactus() {
+window.open('info.html', '_blank');
+}
+
+function gallery() {
+window.open('gallery.html', '_blank');
+}
+
+</script>
+<style>
+#title {
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 50px;
+		color: #ffffff;
+		font-size: 50px;
+		font-family: 'product-sans'; 
+		
+		}
+		@font-face {
+		
+		font-family: 'product-sans'; 
+			 src: url('Product Sans Regular.ttf');
+		}
+		
+body {
+		background: #C2185B;
+    background-image: linear-gradient(to right, #3AB2FF, #C2185B);
+		}	
+
+#info {
+
+		margin-top: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		color: #ffffff;
+		font-size: 30px;
+		font-family: 'product-sans'; 
+}	
+
+img {
+		width: 300px;
+		height:300px;
+}	
+
+@media only screen and (max-width: 600px) {
+ img {
+		width: 200px;
+		height:200px;
+}	
+}
+
+.btn {
+     width: 150px;
+     height: 35px;
+     margin: 0 auto;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+text-transform: uppercase;
+background: #1565C0;
+border-radius: 5px;
+border: none;
+transition: all 0.4s ease 0s;
+display: inline;
+		margin-left: 5%;
+
+      }						
+      
+.btn:hover {
+background: #C2185B;
+transition: all 0.4s ease 0s;
+}      						
+
+</style>
+</head>
+<body>
+<h1 id="title" align="center">UCD</h1> <br>
+<img src="images/logo.png" align="right">
+<div id="info">
+Life seems to be a drag right! You have been trying and trying but nothing seems to inspire you. Well, don't worry no more.
+
+Welcome to the United Club of Developers, a place where people like you and I change the way one perceives the world. Let's have a tour of what we are all about and what we have to offer you.
+</div> <br> <br>
+  <button type="button" class="btn" onclick="contactus()">Contact Us</button>
+  <button type="button" class="btn" onclick="gallery()">Gallery</button>
+
+</body>
+</html>

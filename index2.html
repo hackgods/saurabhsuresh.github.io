@@ -1,0 +1,155 @@
+<html>
+<head> 
+<script language="javascript">
+
+var fname= localStorage.getItem("fname");
+var fmail= localStorage.getItem("fmail");
+var ftext= localStorage.getItem("ftext");
+var info = fname + " " + "your Email ID is " + fmail + "<br><br> Your Message: <br><br>" + ftext ;
+
+window.onload = function() {
+document.getElementById("infoo").innerHTML = info;
+}
+</script>
+
+<title>Contact Us</title> 
+<style>
+#title {
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 50px;
+		color: #ffffff;
+		font-size: 50px;
+		font-family: 'product-sans'; 
+		
+		}
+		@font-face {
+		
+		font-family: 'product-sans'; 
+			 src: url('Product Sans Regular.ttf');
+		}
+
+#infoo {
+		color: #000;
+		font-size: 30px;
+		font-family: 'product-sans'; 
+		margin-right: 5%;
+		margin-top: 10%;
+		margin-left: 5%;
+		}		
+		
+@media only screen and (max-width: 600px) {
+  #infoo {
+		
+		font-size: 17px; 
+				margin-right: 1%;
+
+		}	
+		
+		#formbox {
+		
+		background-color:#FAFAFA;
+		box-shadow: 0 39px 38px rgba(0,0,0,0.30), 0 20px 12px rgba(0,0,0,0.10); 
+        border-radius: 10px;
+ 		height: 350px;
+ 		width: 75%;
+ 		position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -37.5%;
+		}	
+}	
+
+
+#formbox {
+		
+		background-color:#FAFAFA;
+		box-shadow: 0 39px 38px rgba(0,0,0,0.30), 0 20px 12px rgba(0,0,0,0.10); 
+        border-radius: 10px;
+ 		height: 450px;
+ 		width: 70%;
+ 		position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -35%;
+		}	
+		
+#form {
+		color: #212121;
+		font-size: 25px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+				font-family: 'product-sans'; 
+
+		}	
+		
+body {
+		background: #C2185B;
+    background-image: linear-gradient(to right, #3AB2FF, #C2185B);
+		}	
+		
+input {
+		width: 100%; 
+	   margin-bottom: 19px; 
+	outline:none;
+	padding: 10px;
+	font-size: 23px;
+	color: #000;
+	border: 2px solid #424242;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+			font-family: 'product-sans'; 
+
+		}
+		
+textarea {
+			width: 100%; 
+	   margin-bottom: 19px; 
+	outline:none;
+	padding: 10px;
+	font-size: 23px;
+	color: #000;
+	border: 2px solid #424242;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	resize:none;
+			font-family: 'product-sans'; 
+
+	
+		}
+
+#btn {
+     width: 100px;
+     height: 35px;
+     margin: 0 auto;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+text-transform: uppercase;
+background: #1565C0;
+border-radius: 5px;
+border: none;
+transition: all 0.4s ease 0s;
+      }						
+      
+#btn:hover {
+background: #C2185B;
+transition: all 0.4s ease 0s;
+}      			
+</style>
+</head>
+<body>
+
+<h1 id="title" align="center">Contact Us</h1>
+<br>
+<div id="formbox">
+<h1 id="infoo" align="left">Lorem Ipsum Dolor</h1>
+
+</div>
+</body>
+</html>
