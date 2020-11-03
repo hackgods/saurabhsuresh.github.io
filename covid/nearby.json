@@ -1,32 +1,21 @@
 {
-   "muscat": {
-      "name": {
+   "muscat": [
+      {
          "hospital": "Al Nahdha Hospital",
          "link": "https://goo.gl/maps/3qjvifCTtgj7vSCx7",
-         "img": "https://saurabhsuresh.github.io/covid/alnadha.jpg",
-              }
-              
-           "name": {
+         "img": "https://saurabhsuresh.github.io/covid/alnadha.jpg"
+      },
+      {
          "hospital": "Kims Hospital",
          "link": "https://goo.gl/maps/3qjvifCTtgj7vSCx7",
-         "img": "https://saurabhsuresh.github.io/covid/alnadha.jpg",
-              }
-                       
-          }
-          
-          
-     "alkhoud": {
+         "img": "https://saurabhsuresh.github.io/covid/alnadha.jpg"
+      }
+   ],
+   "alkhoud": {
       "name": {
          "hospital": "Sultan Qaboos Hospital",
          "link": "https://goo.gl/maps/3qjvifCTtgj7vSCx7",
-         "img": "https://saurabhsuresh.github.io/covid/alnadha.jpg",
-              }
-              
-           "name": {
-         "hospital": "Royal Hospital",
-         "link": "https://goo.gl/maps/3qjvifCTtgj7vSCx7",
-         "img": "https://saurabhsuresh.github.io/covid/alnadha.jpg",
-              }
-                       
-          }        
+         "img": "https://saurabhsuresh.github.io/covid/alnadha.jpg"
+      }
+   }
 }
