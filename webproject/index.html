@@ -1,0 +1,217 @@
+<html>
+<style>
+body {
+ background-image: url("bg1.png");
+  background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.logo {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#card {
+ background-image: url("bg2.png");
+ width: 50%;
+ border-radius:10px;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+    background-repeat: no-repeat;
+   background-size: cover;
+   padding: 20px;
+   	margin-bottom: 150px;
+-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#card:hover{
+box-shadow: 0 39px 38px rgba(0,0,0,0.30), 0 20px 12px rgba(0,0,0,0.22); 
+   border-radius: 40px;
+   -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.title {
+font-family: 'PSR';
+  color: white;
+    font-size: 34px;
+    
+
+}
+
+.subtitle {
+font-family: 'PSB';
+color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+
+}
+
+
+.items {
+font-family: 'PSR';
+  color: white;
+    font-size: 24px;
+margin-left:65px;
+}
+
+@font-face {
+    font-family: 'PSR'; 
+    src: url('Product Sans Bold.ttf');
+}
+
+@font-face {
+   
+    font-family: 'PSB'; 
+    src: url('Product Sans Regular.ttf');
+
+}
+
+input {
+		width: 80%; 
+	   margin-bottom: 10px; 
+	outline:none;
+	padding: 10px;
+	font-size: 20px;
+	color: #000;
+	border: 1px solid #ffffff;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+			font-family: 'PSR'; 
+			display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+		}
+		
+select{
+margin-bottom: 10px; 
+	outline:none;
+	padding: 10px;
+	font-size: 20px;
+	color: #000;
+	border: 1px solid #ffffff;
+	font-family: 'PSR'; 
+			display: block;
+margin-left:75px;
+border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}		
+		
+		.btn {
+
+     margin: 0 auto;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+text-transform: uppercase;
+background: #1c4473;
+border-radius: 5px;
+border: none;
+transition: all 0.4s ease 0s;
+margin-bottom:20px;
+      }						
+      
+.btn:hover {
+background: #C2185B;
+transition: all 0.4s ease 0s;
+}  
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+#card {
+ background-image: url("bg2.png");
+ width: 80%;
+ border-radius:10px;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+    background-repeat: no-repeat;
+   background-size: cover;
+   padding: 20px;
+   	box-shadow: 0 39px 38px rgba(0,0,0,0.30), 0 20px 12px rgba(0,0,0,0.10); 
+   	margin-bottom: 150px;
+}
+
+.items {
+font-family: 'PSR';
+  color: white;
+    font-size: 24px;
+margin-left:45px;
+}
+
+}    
+</style>
+<script>
+
+function subfunc() {
+
+var fname = document.getElementById("fname").value;
+var sap = document.getElementById("sap").value;
+var branch = document.getElementById("branch").value;
+var year = document.getElementById("year").value;
+var course = document.getElementById("course").value;
+var email = document.getElementById("email").value;
+var mobile = document.getElementById("mobile").value;
+
+localStorage.setItem("fname",fname);
+localStorage.setItem("sap",sap);
+localStorage.setItem("branch",branch);
+localStorage.setItem("year",year);
+localStorage.setItem("course",course);
+localStorage.setItem("email",email);
+localStorage.setItem("mobile",mobile);
+
+
+}
+
+</script>
+<body>
+<br>
+<h2 class="title" align="center">HG Technologies</h2>
+<div id="card">
+<br>
+<h4 class="subtitle" align="center">Course Registration</h2>
+<br>
+<form onsubmit="subfunc()" action="payment.html">
+<h2 class="items">Name</h2>
+  <input type="text" id="fname" maxlength="30" placeholder="Your full name" required >
+<h2 class="items" >SAP ID</h2>
+  <input type="number" id="sap" pattern="[0-9]" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  maxlength="9" placeholder="5000xxxxx">
+
+<h2 class="items" >Branch</h2>
+  <input type="text" id="branch" maxlength="15" placeholder="BCA">
+
+<h2 class="items" >Year</h2> 
+  <select id="year">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+   <option value="6">6</option>
+  </select>
+  
+<h2 class="items" >Email</h2>
+  <input type="email" id="email" maxlength="30" placeholder="baphemet@gmail.com" required >
+
+<h2 class="items" >Mobile</h2>
+  <input type="number" id="mobile" pattern="[0-9]" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" placeholder="6662649802" required >
+
+<h2 class="items" >Course</h2> 
+  <select id="course">
+    <option value="1">Full Stack + React Js (1999 + 999)</option>
+    <option value="2">MERN Stack + Fundamentals (2999 + 199)</option>
+    <option value="3">Flutter Android/iOS+ Web (1999 + 500)</option>
+    <option value="4">Swift + Cocoa (2500 + 500)</option>
+  </select>
+  
+<br>
+<input type='submit' class="btn" value="Register & Pay" >
+</form>
+</div>
+</body>
+</html>

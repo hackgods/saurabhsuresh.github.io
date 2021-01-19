@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Old+Standard+TT:700|Share+Tech+Mono|Annie+Use+Your+Telescope" rel="stylesheet">
+<div class="background">
+  <div class="check">
+    <h1 id="title">HG Tech</h1>
+    <div class="meta">
+      <div class="meta-item">
+        <h2 class="meta-item-label" h2>Date</h2>
+        <h2 class="meta-item-label" h2>19/1/21</h2>
+      </div>
+      <div class="meta-item">
+        <h2 class="meta-item-label" 2>SL</h2>
+                <h2 class="meta-item-label" 2 id="sl">1002</h2>
+
+      </div>
+      <div class="meta-item">
+        <h2 class="meta-item-label">Name</h2>
+                <h2 class="meta-item-label" id="uname">xxx</h2>
+
+      </div>
+      <div class="meta-item">
+        <h2 class="meta-item-label">SAP</h2>
+                <h2 class="meta-item-label" id="usap">xxxxxxxxx</h2>
+
+      </div>
+      <div class="meta-item">
+        <h2 class="check-number" id="checknum">69666</h2>
+      </div>
+    </div>
+    <h3 class="item-types" id="utitle">
+      xxxxx  xxxx xxxx xxxx  xxxxx
+    </h3>
+    <div class="order-list-container">
+      <div class="order-list writing">
+        <h3 class="tax">GST</h3>
+        <h3 class="total">Total</h3>
+
+        <h3 class="ordered-item relleno" id="course1">Full Stack Dev</h3>
+        <h3 class="ordered-item relleno-price" id="course1price">1999</h3>
+        <h3 class="ordered-item green-ranch" id="course2">React Js</h3>
+        <h3 class="ordered-item green-price" id="course2price">999</h3>
+
+        <h3 class="ordered-item tax-writing" id="gst">69</h3>
+        <h3 class="ordered-item total-writing" id="totalprice">₹xxxx</h3>
+      </div>
+
+      <div class="order-list grid-lines">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+
+    </div>
+    <div class="company-info">
+      <h4 class="small-caps usa">made in india</h4>
+      
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+  <script>
+  var uname = localStorage.getItem("fname");
+var usap = localStorage.getItem("sap");
+var ubranch = localStorage.getItem("branch");
+var uyear = localStorage.getItem("year");
+var ucourse = localStorage.getItem("course");
+
+
+  document.getElementById('uname').innerHTML = uname;
+    document.getElementById('usap').innerHTML = usap;
+      document.getElementById('utitle').innerHTML = uname+ " " + ubranch + " " + usap;
+document.getElementById("checknum").innerHTML = Math.floor(Math.random() * 99999) + 1000;
+document.getElementById("sl").innerHTML = Math.floor(Math.random() * 9999) + 111;
+
+if(ucourse == "1") {
+document.getElementById('course1').innerHTML = "Full Stack Dev";
+document.getElementById('course1price').innerHTML = "1999";
+document.getElementById('course2').innerHTML = "React Js";
+document.getElementById('course2price').innerHTML = "999";
+document.getElementById('gst').innerHTML = "29.98";
+document.getElementById('totalprice').innerHTML = 2998 + 29.98;
+
+
+}
+else if (ucourse == "2"){
+document.getElementById('course1').innerHTML = "MERN Stack";
+document.getElementById('course1price').innerHTML = "2999";
+document.getElementById('course2').innerHTML = "Fundamentals";
+document.getElementById('course2price').innerHTML = "199";
+document.getElementById('gst').innerHTML = "31.98";
+document.getElementById('totalprice').innerHTML = 3198 + 31.98 ;
+
+
+}
+
+else if (ucourse == "3"){
+document.getElementById('course1').innerHTML = "Flutter Android/iOS";
+document.getElementById('course1price').innerHTML = "1999";
+document.getElementById('course2').innerHTML = "Web";
+document.getElementById('course2price').innerHTML = "500";
+document.getElementById('gst').innerHTML = "24.99";
+document.getElementById('totalprice').innerHTML = 2499 + 24.99; 
+
+}
+
+else if (ucourse == "4"){
+document.getElementById('course1').innerHTML = "Swift";
+document.getElementById('course1price').innerHTML = "2500";
+document.getElementById('course2').innerHTML = "Cocoa";
+document.getElementById('course2price').innerHTML = "500";
+document.getElementById('gst').innerHTML = "30";
+document.getElementById('totalprice').innerHTML = 3000 + 30;
+
+
+}
+
+
+
+  </script>
+</body>
+</html>
